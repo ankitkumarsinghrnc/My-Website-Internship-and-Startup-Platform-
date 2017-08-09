@@ -1,0 +1,7 @@
+{% extends "software/header.html" %}
+
+{% block content %}
+     <h3>{{user.username}}</h3>
+	 <h6>on {{user.password}}</h6>
+	 {{user.password|safe|linebreaks}}
+{% endblock %}

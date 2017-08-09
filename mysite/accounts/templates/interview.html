@@ -1,0 +1,7 @@
+{% extends "user/front.html" %}
+
+{% block content %}
+       {% for entries in object_list %}
+	   <h5> <a href="/info/{{entries.id}}"> {{entries.name}} </a> </h5>
+	   {% endfor %}
+{% endblock %}

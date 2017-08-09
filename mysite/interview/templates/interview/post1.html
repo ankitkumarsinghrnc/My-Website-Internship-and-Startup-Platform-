@@ -1,0 +1,7 @@
+{% extends "user/front.html" %}
+
+{% block content %}
+     <h3>{{Post.title}}</h3>
+	 <h6>on {{Post.date}}</h6>
+	 {{Post.body|safe|linebreaks}}
+{% endblock %}

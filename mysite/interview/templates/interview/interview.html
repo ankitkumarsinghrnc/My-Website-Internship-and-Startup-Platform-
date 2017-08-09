@@ -1,0 +1,7 @@
+{% extends "user/front.html" %}
+
+{% block content %}
+       {% for Post in object_list %}
+	   <h5> {{Post.date|date:"y-m-d"}}<a href="/info/{{Post.id}}"> {{Post.title}} </a> </h5>
+	   {% endfor %}
+{% endblock %}

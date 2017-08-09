@@ -1,0 +1,7 @@
+{% extends "user/front.html" %}
+
+{% block content %}
+       {% for entries in object_list %}
+	   <h5> <a href="{{startups.id}}"> {{startups.company_name}} </a> </h5>
+	   {% endfor %}
+{% endblock %}

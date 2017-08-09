@@ -1,0 +1,12 @@
+{% extends "user/front.html" %}
+
+{% block content %}
+     <img src="startups.logo" class="responsive-img" style='max-height:100px;' alt="face">
+     <h3>{{startups.company_name}}</h3>
+	 <h3>{{startups.co_founders}}</h3>
+	 <h3>Details</h3>
+	 {{startups.details|safe|linebreaks}}
+	 
+	 <input type="submit" name="submit" value="APPLY">
+	 
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "user/front.html" %}
+
+{% block content %}
+       <h3>List of companies for internship</h3>
+       <li><a href='/startup/intern'>COMPANY 1</a></li>
+	   <li><a href='/startup/intern'>COMPANY 2</a></li>
+	   <li><a href='/startup/intern'>COMPANY 3</a></li>
+	   
+	   
+       {% for startups in object_list %}
+	   <li><a href="{{startups.id}}">{{startups.company_name}} (STARTUPS)</a></li>
+	   
+	   {% endfor %}
+{% endblock %}

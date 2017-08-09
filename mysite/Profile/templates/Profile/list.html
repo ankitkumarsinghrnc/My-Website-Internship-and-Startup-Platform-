@@ -1,0 +1,7 @@
+{% extends "user/front.html" %}
+
+{% block content %}
+       {% for entries in object_list %}
+	   <h4> *  <a href="{{entries.id}}"> {{entries.name}} </a> </h4> 
+	   {% endfor %}
+{% endblock %}

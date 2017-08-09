@@ -1,0 +1,11 @@
+{% extends "user/front.html" %}
+
+{% block content %}
+     <h3>{{entries.name}}</h3>
+	 <h3>{{entries.enrollment}}</h3>
+	 <h4>{{entries.date_of_birth}}</h4>
+	 <h3>Skills</h3>
+	 {{entries.skills|safe|linebreaks}}
+	 <h3>Some More Info</h3>
+	 {{entries.more_about_you|safe|linebreaks}}
+{% endblock %}
